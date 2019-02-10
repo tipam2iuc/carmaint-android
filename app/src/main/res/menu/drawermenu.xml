@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_dashboard" android:title="@string/dashboard" android:icon="@drawable/ic_dashboard_24px"/>
+        <item android:id="@+id/nav_entree_sortie" android:title="@string/gerer_entrer_sortie" android:icon="@drawable/ic_entree_sortie"/>
+        <item android:id="@+id/nav_incident" android:title="@string/gerer_incident" android:icon="@drawable/ic_incident"/>
+        <item android:id="@+id/nav_panne" android:title="@string/gerer_panne" android:icon="@drawable/ic_panne_24px"/>
+        <item android:id="@+id/nav_accident" android:title="@string/gerer_accident" android:icon="@drawable/ic_accident_24px"/>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_parametre" android:title="@string/gerer_parametre" android:icon="@drawable/ic_setting_24px"/>
+    </group>
+</menu>

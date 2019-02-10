@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CarMain</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="gerer_panne">Gérer les pannes</string>
+    <string name="gerer_accident">Gérer les accidents</string>
+    <string name="gerer_incident">Gérer les incidents</string>
+    <string name="gerer_entrer_sortie">Gérer les entrées/Sortie</string>
+     <string name="gerer_parametre">Paramètres</string>
+    <string name="gerer_routine">Routine</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="total_vehicul">Total véhicule</string>
+    <string name="en_deplacement">En déplacement</string>
+    <string name="en_reparation">En reparation</string>
+    <string name="depense_maintenance">Dépenses maintainance</string>
+    <string name="depense_reparation">Dépense rapation</string>
+    <string name="alert">Alertes</string>
+    <string name="voiture_disponible">Voiture disponible</string>
+
+</resources>
