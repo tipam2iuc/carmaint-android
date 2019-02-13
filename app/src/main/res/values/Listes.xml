@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Combo box liste des incidents-->
+    <string-array name="Liste_incident">
+        <item>Choisir un incident</item>
+        <item>Egratinure</item>
+        <item>Défaut de papier</item>
+        <item>Excès de vitesse</item>
+        <item>Altercation avec la police</item>
+    </string-array>
+    <!-- Combo box liste des pannes-->
+    <string-array name="Liste_pannes">
+        <item>Choisir une pannes</item>
+        <item>Carrosserie</item>
+        <item>Moteur</item>
+        <item>Frein</item>
+        <item>Embrayage</item>
+        <item>Radiateur</item>
+        <item>Direction</item>
+    </string-array>
+    <!-- Combo box liste des accidents-->
+    <string-array name="Liste_accident">
+        <item>Choisir un accident</item>
+        <item>Collision</item>
+        <item>Tonneau</item>
+        <item>Eclatement de pneud</item>
+    </string-array>
+    <!-- Combo box liste des voiture-->
+    <string-array name="Liste_voiture">
+        <item>Choisir une voiture</item>
+        <item>Mercedez ML 350 </item>
+        <item>Toyota Yaris</item>
+        <item>Land Rover </item>
+        <item>Rav 4 </item>
+    </string-array>
+    <!-- Combo box liste des entretien -->
+    <string-array name="Liste_entretien">
+        <item>Choisir un entretien</item>
+        <item>Disque d\'embrayage</item>
+        <item>Frein</item>
+        <item>Changement d\'huile</item>
+        <item>Visite technique</item>
+        <item>Lavage</item>
+        <item>Batterie</item>
+    </string-array>
+
+    <!-- Combo box liste des services-->
+    <string-array name="Liste_services">
+        <item>Choisir un service</item>
+        <item>Service de maintenance</item>
+        <item>Assurance</item>
+        <item>Contentieux</item>
+        <item>Direction</item>
+        <item>Logistique</item>
+    </string-array>
+</resources>

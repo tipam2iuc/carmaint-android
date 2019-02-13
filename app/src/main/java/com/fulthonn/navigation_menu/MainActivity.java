@@ -1,5 +1,6 @@
 package com.fulthonn.navigation_menu;
 
+import android.Manifest;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_dashboard:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,
                         new fragment_dashboard()).commit();
+
                 break;
             case R.id.nav_accident:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,

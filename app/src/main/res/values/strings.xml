@@ -5,16 +5,33 @@
     <string name="gerer_accident">Gérer les accidents</string>
     <string name="gerer_incident">Gérer les incidents</string>
     <string name="gerer_entrer_sortie">Gérer les entrées/Sortie</string>
-     <string name="gerer_parametre">Paramètres</string>
+    <string name="gerer_parametre">Paramètres</string>
     <string name="gerer_routine">Routine</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="total_vehicul">Total véhicule</string>
     <string name="en_deplacement">En déplacement</string>
     <string name="en_reparation">En reparation</string>
+    <string name="en_panne">En panne</string>
     <string name="depense_maintenance">Dépenses maintainance</string>
-    <string name="depense_reparation">Dépense rapation</string>
+    <string name="depense_carburant">Dépenses carburant</string>
+    <string name="depense_reparation">Dépense raparation</string>
     <string name="alert">Alertes</string>
     <string name="voiture_disponible">Voiture disponible</string>
+    <string name="enregistrer_et_envoyer">Enregistrer et envoyer</string>
+    <string name="prendre_une_note">Prendre une note</string>
+    <string name="Message">Message</string>
+    <string name="Information_vehicule">Information du véhicule</string>
+    <string name="mis_en_indisponibilite">Mis en indisponibilité</string>
+
+    <!-- Combo box liste des incidents
+    <string-array name="Liste_incident">
+        <item>Choisir un incident</item>
+        <item>Egratinure</item>
+        <item>Défaut de papier</item>
+        <item>Excès de vitesse</item>
+        <item>Altercation avec la police</item>
+    </string-array>-->
+
 
 </resources>
