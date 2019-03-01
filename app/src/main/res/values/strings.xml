@@ -25,7 +25,7 @@
     <string name="mis_en_indisponibilite">Mis en indisponibilité</string>
 
     <!-- Combo box liste des incidents
-    <string-array name="Liste_incident">
+    <string-array name="liste_incident">
         <item>Choisir un incident</item>
         <item>Egratinure</item>
         <item>Défaut de papier</item>

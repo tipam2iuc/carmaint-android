@@ -9,15 +9,14 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toolbar;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener  {
     private DrawerLayout mdraDrawerLayout;
     private ActionBarDrawerToggle mActionBarDrawerToggle;
-   // Toolbar toolbar = findViewById(R.id.nav_accident);
-    // setSupportActionBar(toolbar);
 
 
     @Override
@@ -28,15 +27,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mActionBarDrawerToggle=new ActionBarDrawerToggle(this,mdraDrawerLayout,R.string.open,R.string.close);
         mdraDrawerLayout.addDrawerListener(mActionBarDrawerToggle);
         NavigationView navigationView=findViewById(R.id.nav_menu_id);
-        navigationView.setNavigationItemSelectedListener(this);
+        //navigationView.setNavigationItemSelectedListener(this);
         mActionBarDrawerToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         if(savedInstanceState==null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,
                     new fragment_dashboard()).commit();
             navigationView.setCheckedItem(R.id.fragment_dashboard_id);
         }
+
+
     }
 
     @Override
@@ -73,5 +75,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         mdraDrawerLayout.closeDrawer(GravityCompat.START);
         return true;
-    }
+   }
 }

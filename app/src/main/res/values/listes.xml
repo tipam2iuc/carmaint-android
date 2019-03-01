@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Combo box liste des incidents-->
-    <string-array name="Liste_incident">
+    <string-array name="liste_incident">
         <item>Choisir un incident</item>
         <item>Egratinure</item>
         <item>Défaut de papier</item>
@@ -26,7 +26,7 @@
         <item>Eclatement de pneud</item>
     </string-array>
     <!-- Combo box liste des voiture-->
-    <string-array name="Liste_voiture">
+    <string-array name="liste_voiture">
         <item>Choisir une voiture</item>
         <item>Mercedez ML 350 </item>
         <item>Toyota Yaris</item>
@@ -34,7 +34,7 @@
         <item>Rav 4 </item>
     </string-array>
     <!-- Combo box liste des entretien -->
-    <string-array name="Liste_entretien">
+    <string-array name="liste_entretien">
         <item>Choisir un entretien</item>
         <item>Disque d\'embrayage</item>
         <item>Frein</item>
@@ -45,7 +45,7 @@
     </string-array>
 
     <!-- Combo box liste des services-->
-    <string-array name="Liste_services">
+    <string-array name="liste_services">
         <item>Choisir un service</item>
         <item>Service de maintenance</item>
         <item>Assurance</item>
