@@ -55,7 +55,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        android:src="@drawable/Password_64px"
+        android:src="@drawable/password_64px"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/id_textEdit_password"
         app:layout_constraintTop_toBottomOf="@+id/id_icon_pseudo" />
