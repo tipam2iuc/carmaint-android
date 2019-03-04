@@ -12,5 +12,7 @@
     <color name="Transparant">#00D81B60</color>
     <color name="violet_bg">#300344</color>
     <color name="vert_bg">#1EF105</color>
+    <color name="noir_bg">#0F9EEC</color>
+
 
 </resources>
