@@ -23,6 +23,7 @@
     <string name="Message">Message</string>
     <string name="Information_vehicule">Information du véhicule</string>
     <string name="mis_en_indisponibilite">Mis en indisponibilité</string>
+    <string name="connexion">Connexion</string>
 
     <!-- Combo box liste des incidents
     <string-array name="liste_incident">

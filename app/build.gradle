@@ -3,13 +3,13 @@ apply plugin: 'com.android.application'
 android {
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
-        minSdkVersion 22
+        minSdkVersion 21
         targetSdkVersion 28
     }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.fulthonn.navigation_menu"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
