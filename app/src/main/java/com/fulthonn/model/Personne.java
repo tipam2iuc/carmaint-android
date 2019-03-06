@@ -1,5 +1,6 @@
 package com.fulthonn.model;
 
+import java.nio.channels.Pipe;
 import java.util.Date;
 import java.util.Objects;
 
@@ -10,17 +11,34 @@ public class Personne {
     private Date birthday;
     private Role role;
     private String email;
+    private String password;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     private Date dateEmbauche;
     private Date numeroPermis;
     private Date expirationPermis;
 
-    public Personne(long idCard, String firsName, String lastName, Date birthday, Role role, String email, Date dateEmbauche, Date numeroPermis, Date expirationPermis) {
+    public Personne(String firsName, String email, String password) {
+        this.firsName = firsName;
+        this.email = email;
+        this.password = password;
+    }
+
+    public Personne(long idCard, String firsName, String lastName, Date birthday, Role role, String email, String password, Date dateEmbauche, Date numeroPermis, Date expirationPermis) {
         this.idCard = idCard;
         this.firsName = firsName;
         this.lastName = lastName;
         this.birthday = birthday;
         this.role = role;
         this.email = email;
+        this.password=password;
         this.dateEmbauche = dateEmbauche;
         numeroPermis = numeroPermis;
         expirationPermis = expirationPermis;
@@ -37,6 +55,22 @@ public class Personne {
     @Override
     public int hashCode() {
         return Objects.hash(getIdCard());
+    }
+
+    @Override
+    public String toString() {
+        return "Personne{" +
+                "idCard=" + idCard +
+                ", firsName='" + firsName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", birthday=" + birthday +
+                ", role=" + role +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", dateEmbauche=" + dateEmbauche +
+                ", numeroPermis=" + numeroPermis +
+                ", expirationPermis=" + expirationPermis +
+                '}';
     }
 
     private enum Role{
