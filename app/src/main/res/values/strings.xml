@@ -102,7 +102,7 @@
 
     <!-- Strings related to Scrolling -->
     <string name="title_activity_scrolling">Scrolling</string>
-        <!-- Strings related to Fullscreen -->
+    <!-- Strings related to Fullscreen -->
     <string name="title_activity_fullscreen">Fullscreen</string>
 
 
@@ -161,8 +161,11 @@
     <string name="donate_low">1.99 USD</string>
     <string name="donate_high">9.99 USD</string>
     <string name="donate_exception">Sorry, can not do this!</string>
-
-
+    <string name="cr_er_un_compte">Créer un compte</string>
+    <string name="embauch_le">Embauché le</string>
+    <string name="already_a_member_login_here">Already a member? Login Here</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="cni">CNI</string>
 
 
 </resources>

@@ -25,10 +25,11 @@ public class Personne {
     private Date numeroPermis;
     private Date expirationPermis;
 
-    public Personne(String firsName, String email, String password) {
+    public Personne(String firsName, String email, String password,Role role) {
         this.firsName = firsName;
         this.email = email;
         this.password = password;
+        this.role=role;
     }
 
     public Personne(long idCard, String firsName, String lastName, Date birthday, Role role, String email, String password, Date dateEmbauche, Date numeroPermis, Date expirationPermis) {
@@ -73,13 +74,13 @@ public class Personne {
                 '}';
     }
 
-    private enum Role{
-        responsableParc,
-        mecanicien,
-        agentReservation,
-        agentParking,
-        chauffeur,
-        client
+    public enum Role{
+        ResponsableParc,
+        Mecanicien,
+        AgentReservation,
+        AgentParking,
+        Chauffeur,
+        Client
     }
 
     public long getIdCard() {

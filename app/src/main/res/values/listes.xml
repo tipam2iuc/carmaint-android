@@ -53,4 +53,14 @@
         <item>Direction</item>
         <item>Logistique</item>
     </string-array>
+
+    <!-- Combo box liste des Roles-->
+    <string-array name="Roles">
+        <item>Role</item>
+        <item>Responsable de Parking</item>
+        <item>Mécanicien</item>
+        <item>Agent de reservation</item>
+        <item>Chauffeur</item>
+        <item>Agent de parking</item>
+    </string-array>
 </resources>

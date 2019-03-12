@@ -1,438 +1,444 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment_dashboard_id"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark">
+    android:background="@drawable/new_login_gradients">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/gray_deep"
+                android:textAlignment="center"
+                android:text=" CarMaint's Control center"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textColor="#00FF00"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+                <LinearLayout
+                    android:id="@+id/id_total_voiture"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@color/transparent">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/vert_bg"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:tint="@color/purple_primary"
+                        android:src="@drawable/car_100px"
+                        android:padding="0dp"/>
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle"
+                        android:text="500000"
+                        android:layout_marginTop="-5dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/vert_bg"
+                        />
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#B40431"
+                        android:layout_gravity="center"
+                        android:text="Total"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@color/transparent">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/vert_bg"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:tint="@color/vert_bg"
+                        android:src="@drawable/car_100px"
+                        android:padding="0dp"/>
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle"
+                        android:text="500000"
+                        android:layout_marginTop="-5dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/vert_bg"
+                        />
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#B40431"
+                        android:layout_gravity="center"
+                        android:text="Disponible"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@color/transparent">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/vert_bg"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:tint="@color/purple_primary"
+                        android:src="@drawable/ic_panne_24px"
+                        android:padding="0dp"/>
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle"
+                        android:text="500000"
+                        android:layout_marginTop="-5dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/vert_bg"
+                        />
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#B40431"
+                        android:layout_gravity="center"
+                        android:text="Panne"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"/>
+                </LinearLayout>
 
 
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="62dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="276dp"
-        android:layout_marginLeft="276dp"
-        android:layout_marginTop="152dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:contentDescription="TODO"
-        android:tint="@color/bleu_ciel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        app:srcCompat="@drawable/ic_notification_24px" />
-
-    <Button
-        android:id="@+id/push_button13"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="276dp"
-        android:layout_marginLeft="276dp"
-        android:layout_marginTop="464dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/button_bg_round"
-        android:padding="15dp"
-        android:text="5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="260dp"
-        android:layout_marginLeft="260dp"
-        android:layout_marginTop="204dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/alert"
-        android:textColor="@color/Vert"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        tools:text="@string/alert" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="192dp"
-        android:text="@string/depense_maintenance"
-        android:textColor="@color/Vert"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        tools:text="@string/depense_maintenance" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="62dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="152dp"
-        android:contentDescription="TODO"
-        android:tint="@color/bleu_ciel"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        app:srcCompat="@drawable/ic_entree_sortie" />
-
-    <Button
-        android:id="@+id/push_button12"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="464dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/button_bg_round"
-        android:padding="15dp"
-        android:text="5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="260dp"
-        android:layout_marginLeft="260dp"
-        android:layout_marginTop="56dp"
-        android:text="@string/depense_carburant"
-        android:textColor="@color/Vert"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        tools:text="@string/depense_carburant" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="62dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="276dp"
-        android:layout_marginLeft="276dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:contentDescription="TODO"
-        android:tint="@color/bleu_ciel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        app:srcCompat="@drawable/ic_depense_carburant_station_100px" />
-
-    <Button
-        android:id="@+id/push_button11"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="288dp"
-        android:layout_marginLeft="288dp"
-        android:layout_marginTop="324dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/button_bg_round"
-        android:padding="15dp"
-        android:text="5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <Button
-        android:id="@+id/push_button10"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="316dp"
-        android:background="@drawable/button_bg_round"
-        android:padding="15dp"
-        android:text="5"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="45dp"
-        android:text="@string/depense_reparation"
-        android:textColor="@color/Vert"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        tools:text="@string/depense_reparation" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="62dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="4dp"
-        android:contentDescription="TODO"
-        android:tint="@color/bleu_ciel"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        app:srcCompat="@drawable/ic_car_depense_reparation_100px" />
-
-    <Button
-        android:id="@+id/push_button9"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="168dp"
-        android:background="@drawable/button_bg_round"
-        android:padding="15dp"
-        android:text="5"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="216dp"
-        android:text="@string/en_deplacement"
-        android:textColor="@color/Vert"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/en_deplacement" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="62dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="172dp"
-        android:contentDescription="TODO"
-        android:tint="@color/bleu_ciel"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_entree_sortie" />
-
-    <Button
-        android:id="@+id/push_button8"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="296dp"
-        android:layout_marginLeft="296dp"
-        android:layout_marginTop="168dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/button_bg_round"
-        android:padding="15dp"
-        android:text="5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="278dp"
-        android:layout_marginLeft="278dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/en_panne"
-        android:textColor="@color/Vert"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/en_panne" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="62dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="288dp"
-        android:layout_marginLeft="288dp"
-        android:layout_marginTop="172dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:contentDescription="TODO"
-        android:tint="@color/Vert"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_car_rouge96px" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="145dp"
-        android:layout_marginLeft="145dp"
-        android:layout_marginTop="136dp"
-        android:text="@string/en_deplacement"
-        android:textColor="@color/Vert"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/voiture_disponible" />
-
-    <Button
-        android:id="@+id/push_button7"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginLeft="172dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginRight="72dp"
-        android:background="@drawable/button_bg_round"
-        android:padding="15dp"
-        android:text="5"
-        app:layout_constraintEnd_toStartOf="@+id/imageView8"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="62dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginLeft="168dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:contentDescription="TODO"
-        android:tint="@color/colorAccent"
-        app:layout_constraintEnd_toStartOf="@+id/push_button6"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_car_rouge96px" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="296dp"
-        android:layout_marginLeft="296dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:text="@string/depense_reparation"
-        android:textColor="@color/Vert"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/en_reparation" />
-
-    <Button
-        android:id="@+id/push_button6"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="308dp"
-        android:layout_marginLeft="308dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/button_bg_round"
-        android:padding="15dp"
-        android:text="5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="67dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="300dp"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:contentDescription="TODO"
-        android:tint="@color/marron"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_car_rouge96px" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginBottom="603dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintGuide_percent="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="62dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="TODO"
-        android:tint="@color/design_default_color_primary_dark"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_car_rouge96px" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="70dp"
-        android:text="@string/total_vehicul"
-        android:textColor="@color/Vert"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/total_vehicul" />
 
 
-    <Button
-        android:id="@+id/push_button"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@drawable/button_bg_round"
-        android:padding="15dp"
-        android:text="5"
-        app:layout_constraintEnd_toStartOf="@+id/imageView7"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="395dp"
-        android:layout_height="17dp"
-        android:layout_marginTop="12dp"
-        android:background="@color/colorAccent"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/push_button9" />
 
-</android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@color/transparent">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/vert_bg"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:tint="@color/purple_primary"
+                        android:src="@drawable/ic_entree_sortie"
+                        android:padding="0dp"/>
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle"
+                        android:text="500000"
+                        android:layout_marginTop="-5dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/vert_bg"
+                        />
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#B40431"
+                        android:layout_gravity="center"
+                        android:text="Sortie"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@color/transparent">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/vert_bg"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:tint="@color/purple_primary"
+                        android:src="@drawable/ic_car_accident_96px"
+                        android:padding="0dp"/>
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle"
+                        android:text="500000"
+                        android:layout_marginTop="-5dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/vert_bg"
+                        />
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#B40431"
+                        android:layout_gravity="center"
+                        android:text="Accident"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@color/transparent">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/vert_bg"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:tint="@color/purple_primary"
+                        android:src="@drawable/car_theft"
+                        android:padding="0dp"/>
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle"
+                        android:text="500000"
+                        android:layout_marginTop="-5dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/vert_bg"
+                        />
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#B40431"
+                        android:layout_gravity="center"
+                        android:text="Reparation"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"/>
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@color/transparent">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/vert_bg"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:tint="@color/purple_primary"
+                        android:src="@drawable/money_bag_96px"
+                        android:padding="0dp"/>
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle"
+                        android:text="500000"
+                        android:layout_marginTop="-5dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/vert_bg"
+                        />
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#B40431"
+                        android:layout_gravity="center"
+                        android:text="Dépense"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@color/transparent">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/vert_bg"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:tint="@color/purple_primary"
+                        android:src="@drawable/ic_depense_carburant_station_100px"
+                        android:padding="0dp"/>
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle"
+                        android:text="500000"
+                        android:layout_marginTop="-5dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/vert_bg"
+                        />
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#B40431"
+                        android:layout_gravity="center"
+                        android:text="Carburant"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@color/transparent">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/vert_bg"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:tint="@color/purple_primary"
+                        android:src="@drawable/alert_96px"
+                        android:padding="0dp"/>
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle"
+                        android:text="75"
+                        android:layout_marginTop="-5dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/vert_bg"
+                        />
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#B40431"
+                        android:layout_gravity="center"
+                        android:text="Alerte"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"/>
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

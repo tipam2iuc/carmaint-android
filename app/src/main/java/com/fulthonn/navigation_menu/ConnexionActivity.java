@@ -14,10 +14,11 @@ import com.fulthonn.model.Personne;
 public class ConnexionActivity extends AppCompatActivity {
     private Button connexion;
     private Button creerCompte;
+
     private EditText login;
     private EditText password;
-    //private String username;
-    //private String motDePass;
+
+
    private Personne admin;
 
     @Override
@@ -28,12 +29,23 @@ public class ConnexionActivity extends AppCompatActivity {
         creerCompte=(Button) findViewById(R.id.btn_creer_compte_connexion);
         login= (EditText) findViewById(R.id.editText_userName_connexion);
         password=(EditText)findViewById(R.id.editText_motdePass_connexion);
+
+        Context context= getApplicationContext();
+
         //username=login.getText().toString();
         //motDePass=password.getText().toString();
 
-        admin =new Personne("Fulthonn","admin@carmaint.net","admin");
+        admin =new Personne("Fulthonn","admin@carmaint.net","admin", Personne.Role.ResponsableParc);
         //admin.setEmail("admin@carmaint.net");
         //admin.setPassword("admin");
+
+        creerCompte.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ConnexionActivity.this, CreerCompteActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         connexion.setOnClickListener(new View.OnClickListener() {
@@ -43,9 +55,9 @@ public class ConnexionActivity extends AppCompatActivity {
                 final String username=login.getText().toString();
                 final String motDePass=password.getText().toString();
 
-                if(!admin.getEmail().equalsIgnoreCase(username)  && !admin.getPassword().equalsIgnoreCase(motDePass))
+                if(!admin.getEmail().equals(username)  || admin.getPassword().equals(motDePass))
                {
-                    Intent intent =new Intent(ConnexionActivity.this,MainActivity.class);
+                    Intent intent = new Intent(ConnexionActivity.this,MainActivity.class);
                     startActivity(intent);
                 }
                 else {
@@ -57,6 +69,8 @@ public class ConnexionActivity extends AppCompatActivity {
 
             }
         });
+
+
     }
 
 }
