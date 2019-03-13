@@ -18,19 +18,20 @@ public class fragment_dashboard extends Fragment  {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        Context context = getContext().getApplicationContext();
+        //Context context = getContext().getApplicationContext();
         final View view = inflater.inflate(R.layout.fragment_dashboard,container,false);
         total_vehicule = view.findViewById(R.id.id_total_voiture);
         total_vehicule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(view.getContext(),SampleActivity.class);
-                startActivity(intent);
+                Intent intent = new Intent(getContext(),SampleActivity.class);
+                view.getContext().startActivity(intent);
             }
         });
         return view;
 
     }
+
 
 
 
