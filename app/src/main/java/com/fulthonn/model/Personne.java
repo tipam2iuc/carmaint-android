@@ -1,17 +1,50 @@
 package com.fulthonn.model;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.nio.channels.Pipe;
 import java.util.Date;
 import java.util.Objects;
 
 public class Personne {
-    private long idCard;
+    private int id;
+
+
+
+    @SerializedName("cni")
+    private String idCard;
+    @SerializedName("firtname")
     private String firsName;
+    @SerializedName("lastname")
     private String lastName;
     private Date birthday;
-    private Role role;
+    @SerializedName("role")
+    private String role;
+    private String login;
+    @SerializedName("email")
     private String email;
     private String password;
+    private Date dateEmbauche;
+    private Date numeroPermis;
+    private Date expirationPermis;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+
 
     public String getPassword() {
         return password;
@@ -21,23 +54,24 @@ public class Personne {
         this.password = password;
     }
 
-    private Date dateEmbauche;
-    private Date numeroPermis;
-    private Date expirationPermis;
 
-    public Personne(String firsName, String email, String password,Role role) {
+
+    public Personne(String firsName, String email, String password,String role) {
+
         this.firsName = firsName;
         this.email = email;
         this.password = password;
         this.role=role;
     }
 
-    public Personne(long idCard, String firsName, String lastName, Date birthday, Role role, String email, String password, Date dateEmbauche, Date numeroPermis, Date expirationPermis) {
+    public Personne(int id, String idCard, String firsName, String lastName, Date birthday, String role,String login, String email, String password, Date dateEmbauche, Date numeroPermis, Date expirationPermis) {
+        this.id=id;
         this.idCard = idCard;
         this.firsName = firsName;
         this.lastName = lastName;
         this.birthday = birthday;
         this.role = role;
+        this.login=login;
         this.email = email;
         this.password=password;
         this.dateEmbauche = dateEmbauche;
@@ -83,11 +117,11 @@ public class Personne {
         Client
     }
 
-    public long getIdCard() {
+    public String getIdCard() {
         return this.idCard;
     }
 
-    public void setIdCard(long IdCard) {
+    public void setIdCard(String IdCard) {
         this.idCard = IdCard;
     }
 
@@ -115,7 +149,7 @@ public class Personne {
         this.birthday = birthday;
     }
 
-    public Role getRole() {
+    public String getRole() {
         return this.role;
     }
 
@@ -137,7 +171,7 @@ public class Personne {
         this.dateEmbauche = dateEmbauche;
     }
 
-    public void setRole(Role role) {
+    public void setRole(String role) {
         this.role = role;
     }
 

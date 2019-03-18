@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailVoitureActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <ImageView
+        android:id="@+id/image_detail"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+
+
+        />
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/detail_matricule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matricule"
+        android:textSize="20sp"
+        />
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/detail_modele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modèle"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/detail_marque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marque"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/detail_MiseEnService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mise en service"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/detail_Vitesse_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vitesse max"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/detail_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statut"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/detail_type_carburant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type de carburant"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

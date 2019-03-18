@@ -23,6 +23,7 @@ public class CreerCompteActivity extends AppCompatActivity {
     private CheckBox checkBoxagree;
     private Button alreadyAMember;
     private Button signUp;
+    private Button register;
    // public final ArrayList<Personne> personnes= new ArrayList<>();
     public Personne user;
 
@@ -38,11 +39,19 @@ public class CreerCompteActivity extends AppCompatActivity {
         password=findViewById(R.id.editText_password_CreerCompte);
         alreadyAMember=findViewById(R.id.btn_alreadyMember_creerCompte);
         retypePassword=findViewById(R.id.editText_retypePassword_CreerCompte);
-
+        register= findViewById(R.id.btn_register_user);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(CreerCompteActivity.this,InscriptionActivity.class);
+                startActivity(intent);
+            }
+        });
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 checkBoxagree=findViewById(R.id.chkBox_agree_creerCompte);
+
                 if(checkBoxagree.isChecked()&& userName.getText().toString()!=""&& password.getText().toString()!=""&& email.getText().toString()!="")
                 {
                     if(password.getText().toString().equals(retypePassword.getText().toString()))

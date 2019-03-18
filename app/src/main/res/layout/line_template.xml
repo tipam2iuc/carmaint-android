@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/iv_sample"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:src="@drawable/money_bag_96px"
@@ -22,13 +22,59 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
         android:layout_toEndOf="@id/iv_sample"
-        android:gravity="center"
+        android:gravity="left"
         android:text="Fulthonn"
         app:layout_constraintBottom_toBottomOf="@+id/iv_sample"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_statut"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/iv_sample"
         app:layout_constraintTop_toTopOf="@+id/iv_sample"
-        app:layout_constraintVertical_bias="0.604" />
+        app:layout_constraintVertical_bias="0.345" />
+    <TextView
+        android:id="@+id/tv_marque"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/iv_sample"
+        android:gravity="left"
+        android:text="Marque"
+        app:layout_constraintStart_toEndOf="@id/iv_sample"
+        app:layout_constraintTop_toBottomOf="@id/tv_sample"
+        app:layout_constraintEnd_toStartOf="@id/tv_modele"
+        app:layout_constraintBottom_toBottomOf="@id/iv_sample"/>
 
+    <TextView
+        android:id="@+id/tv_statut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Statut"
+        app:layout_constraintBottom_toBottomOf="@id/tv_sample"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_sample"
+        app:layout_constraintTop_toTopOf="@id/tv_sample" />
+
+    <TextView
+        android:id="@+id/tv_modele"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Modele"
+        app:layout_constraintBottom_toBottomOf="@id/tv_marque"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_statut"
+        app:layout_constraintTop_toBottomOf="@id/tv_marque"
+        app:layout_constraintTop_toTopOf="@id/tv_marque" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    app:layout_constraintTop_toTopOf="@id/iv_sample"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:background="@color/violet"
+    >
+
+</View>
 </android.support.constraint.ConstraintLayout>

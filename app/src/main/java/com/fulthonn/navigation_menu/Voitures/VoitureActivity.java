@@ -1,6 +1,7 @@
-package com.fulthonn.navigation_menu;
+package com.fulthonn.navigation_menu.Voitures;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,55 +13,57 @@ import android.view.MenuItem;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Toast;
 
-import com.fulthonn.model.Sample;
+import com.fulthonn.model.LocalBd;
+import com.fulthonn.model.Voiture;
+import com.fulthonn.navigation_menu.DetailVoitureActivity;
+import com.fulthonn.navigation_menu.R;
 import com.fulthonn.navigation_menu.adapters.VoitureAdapter;
 
 import java.util.ArrayList;
 
-public class SampleActivity extends AppCompatActivity  {
+public class VoitureActivity extends AppCompatActivity  {
 
     RecyclerView rv;
     VoitureAdapter adapter;
 
-    ArrayList<Sample> mySamples;
+    ArrayList<Voiture> myVoitures;
+    ArrayList<Voiture>getMyVoituresEnPanne;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_sample);
+        setContentView(R.layout.activity_voiture);
         Context context = getApplicationContext();
         this.rv = findViewById(R.id.rv_samples);
 
         initDatas();
 
-        this.adapter = new VoitureAdapter(this.mySamples);
+        this.adapter = new VoitureAdapter(this.myVoitures);
         this.rv.setLayoutManager(new LinearLayoutManager(context));
         this.rv.setAdapter(this.adapter);
 
         this.adapter.setOnItemClickListener(new VoitureAdapter.OnItemClickListener() {
             @Override
-            public void onItemClick(Sample sample) {
-                Toast.makeText(getApplicationContext(), sample.getmText(), Toast.LENGTH_SHORT).show();
+            public void onItemClick(Voiture voiture) {
+                Intent intentDetail=new Intent(VoitureActivity.this, DetailVoitureActivity.class);
+                intentDetail.putExtra("IMAGE_KEY",voiture.getPhoto());
+                intentDetail.putExtra("MATRICULE_KEY",getResources().getString(R.string.matricule).toUpperCase()+voiture.getMatricule());
+                intentDetail.putExtra("MARQUE_KEY",getResources().getString(R.string.marque).toUpperCase()+voiture.getMarque());
+                intentDetail.putExtra("MODELE_KEY",getResources().getString(R.string.modele).toUpperCase()+voiture.getModele());
+                intentDetail.putExtra("MISE_EN_SERVICE_KEY",getResources().getString(R.string.mise_en_service).toUpperCase()+voiture.getMiseEnService());
+                intentDetail.putExtra("VITESSE_MAX_KEY",getResources().getString(R.string.vitesse_max).toUpperCase()+voiture.getVitesseMax());
+                intentDetail.putExtra("STATUT_KEY",getResources().getString(R.string.statut).toUpperCase()+voiture.getStatut());
+                startActivity(intentDetail);
+                Toast.makeText(getApplicationContext(), "Vous avez cliqué sur"+voiture.getMatricule(), Toast.LENGTH_SHORT).show();
             }
         });
 
     }
 
     void initDatas(){
-        this.mySamples = new ArrayList<>();
-
-        this.mySamples.add(new Sample("Mercedez", null));
-        this.mySamples.add(new Sample("Toyota", null));
-        this.mySamples.add(new Sample("LandRover", null));
-        this.mySamples.add(new Sample("RangRover", null));
-        this.mySamples.add(new Sample("Renauld", null));
-        this.mySamples.add(new Sample("Peugeo", null));
-        this.mySamples.add(new Sample("Ferrari", null));
-        this.mySamples.add(new Sample("Rav4", null));
-        this.mySamples.add(new Sample("Hummer", null));
-        this.mySamples.add(new Sample("Prado", null));
-        this.mySamples.add(new Sample("Izizu", null));
+        LocalBd.initDatas();
+        this.myVoitures = LocalBd.myVoitures;
     }
 
     @Override

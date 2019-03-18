@@ -35,7 +35,7 @@ public class ConnexionActivity extends AppCompatActivity {
         //username=login.getText().toString();
         //motDePass=password.getText().toString();
 
-        admin =new Personne("Fulthonn","admin@carmaint.net","admin", Personne.Role.ResponsableParc);
+        admin =new Personne("Fulthonn","admin@carmaint.net","admin", "Responsable parc");
         //admin.setEmail("admin@carmaint.net");
         //admin.setPassword("admin");
 
