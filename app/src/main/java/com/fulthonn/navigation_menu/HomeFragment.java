@@ -10,7 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import com.fulthonn.model.LocalBd;
 import com.fulthonn.model.Voiture;
 import com.fulthonn.navigation_menu.Voitures.VoitureAccidentActivity;
 import com.fulthonn.navigation_menu.Voitures.VoitureActivity;
@@ -20,6 +22,8 @@ public class HomeFragment extends Fragment {
     LinearLayout voitureDisponible;
     LinearLayout voitureEnPanne;
     LinearLayout voitureAccident;
+    TextView nombreTotalVoiture;
+
 
     FrameLayout frameLayout;
 
@@ -32,6 +36,9 @@ public class HomeFragment extends Fragment {
         voitureDisponible=v.findViewById(R.id.id_total_voiture);
         voitureEnPanne= v.findViewById(R.id.voiture_EnPanne);
         voitureAccident=v.findViewById(R.id.voiture_Accident);
+        nombreTotalVoiture=v.findViewById(R.id.id_nombreTotalVoiture);
+
+        nombreTotalVoiture.setText(String.valueOf(LocalBd.getNombreTotalVoiture()));
 
         voitureDisponible.setOnClickListener(new View.OnClickListener() {
             @Override

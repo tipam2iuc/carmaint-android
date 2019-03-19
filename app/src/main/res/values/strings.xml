@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CarMain</string>
+    <string name="app_name">CarMaint</string>
     <string name="dashboard">Dashboard</string>
     <string name="gerer_panne">Gérer les pannes</string>
     <string name="gerer_accident">Gérer les accidents</string>

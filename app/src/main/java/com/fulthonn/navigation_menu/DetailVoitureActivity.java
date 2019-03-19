@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.fulthonn.model.LocalBd;
+
 public class DetailVoitureActivity extends AppCompatActivity {
     private ImageView imageDetail;
     private TextView matriculeDetail;
@@ -16,6 +18,7 @@ public class DetailVoitureActivity extends AppCompatActivity {
     private TextView miseEnserviceDetail;
     private TextView vitesseMAXDetail;
     private TextView statutDetail;
+    private TextView nombreTotalVoiture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,7 @@ public class DetailVoitureActivity extends AppCompatActivity {
         vitesseMAXDetail=findViewById(R.id.detail_Vitesse_max);
         statutDetail=findViewById(R.id.detail_status);
 
+
         //recupération des valeurs à partir de l'intent
         Intent i=getIntent();
         String image= i.getExtras().getString("IMAGE_KEY");
@@ -39,13 +43,14 @@ public class DetailVoitureActivity extends AppCompatActivity {
         String vitesseMaxx= i.getExtras().getString("VITESSE_MAX_KEY");
         String statut= i.getExtras().getString("STATUT_KEY");
         //affectation des valeurs au champs
-        imageDetail.setImageResource(R.drawable.logo);
+        imageDetail.setImageResource(R.drawable.mclaren);
         matriculeDetail.setText(matricule);
         marqueDetail.setText(marque);
         modelDetail.setText(modele);
         miseEnserviceDetail.setText(miseEnService);
         vitesseMAXDetail.setText(vitesseMaxx);
         statutDetail.setText(statut);
+
 
     }
 }

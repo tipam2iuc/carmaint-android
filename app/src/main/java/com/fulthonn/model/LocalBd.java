@@ -8,6 +8,7 @@ public final class LocalBd {
     public static ArrayList<Voiture> myVoitures;
     public static ArrayList<Voiture> myVoituresEnPanne=new ArrayList<>();
     public static ArrayList<Voiture> myVoituresAccident=new ArrayList<>();
+    public static int nombreTotal;
 
     public void add(Personne personne)
     {
@@ -19,6 +20,12 @@ public final class LocalBd {
         personnes.remove(personne);
     }
 
+
+    public static int getNombreTotalVoiture()
+    {
+        initDatas();
+         return myVoitures.size();
+    }
 
    public static void initVoitureAccidentDatas(){
 

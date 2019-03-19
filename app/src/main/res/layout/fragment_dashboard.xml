@@ -5,7 +5,7 @@
     android:id="@+id/fragment_dashboard_id"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/new_login_gradients">
+    android:background="@color/transparent">
 <FrameLayout
     android:id="@+id/id_frame_du_dashboard"
     android:layout_width="match_parent"

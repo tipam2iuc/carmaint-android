@@ -43,6 +43,14 @@
         <item>Lavage</item>
         <item>Batterie</item>
     </string-array>
+    <string-array name="list_statut">
+        <item>Statut</item>
+        <item>En panne</item>
+        <item>Disponible</item>
+        <item>Accidenté</item>
+        <item>En déplacement</item>
+        <item>Hors services</item>
+    </string-array>
 
     <!-- Combo box liste des services-->
     <string-array name="liste_services">

@@ -31,11 +31,9 @@ public class fragment_dashboard extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        //Context context = getContext().getApplicationContext();
-        final View view_dashboard = inflater.inflate(R.layout.fragment_dashboard, container, false);
-       // final View view_home=inflater.inflate(R.layout.fragment_home,container,false);
 
-       frameLayout_dashboard=view_dashboard.findViewById(R.id.id_frame_du_dashboard);
+        final View view_dashboard = inflater.inflate(R.layout.fragment_dashboard, container, false);
+        frameLayout_dashboard=view_dashboard.findViewById(R.id.id_frame_du_dashboard);
 
         //partie reservée au navigation bottom
 
@@ -53,7 +51,7 @@ public class fragment_dashboard extends Fragment {
 
         //récupération de l'Id de bottom navigation
         bottomNav = view_dashboard.findViewById(R.id.id_bottom_navigation);
-        bottomNav.setBackgroundColor(getResources().getColor(R.color.yellow_primary));
+        bottomNav.setBackgroundColor(getResources().getColor(R.color.Transparant));
 
         //listner sur les menu latérales
         bottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -62,15 +60,15 @@ public class fragment_dashboard extends Fragment {
 
                 switch (item.getItemId()) {
                     case R.id.id_bot_nav_home:
-                        bottomNav.setItemBackgroundResource(R.color.Bleu);
+                        bottomNav.setItemBackgroundResource(R.color.Transparant);
                         setFragment(homeFragment);
                         break;
                     case R.id.id_bot_nav_stat:
-                        bottomNav.setItemBackgroundResource(R.color.app_green);
+                        bottomNav.setItemBackgroundResource(R.color.Transparant);
                         setFragment(statFragment);
                         break;
                     case R.id.id_bot_nav_notification:
-                        bottomNav.setItemBackgroundResource(R.color.red_primary);
+                        bottomNav.setItemBackgroundResource(R.color.Transparant);
                         setFragment(notificationFragment);
                         break;
                 }
