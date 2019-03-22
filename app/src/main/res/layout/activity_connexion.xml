@@ -18,8 +18,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-
-            <!-- Here you can replace it with your logo or brand name -->
             <ImageView
                 android:layout_width="240dp"
                 android:layout_height="120dp"
@@ -30,20 +28,19 @@
                 android:src="@mipmap/ic_launcher"/>
 
             <EditText
+                android:id="@+id/editText_userName_connexion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:ems="10"
-                android:id="@+id/editText_userName_connexion"
+                android:layout_marginTop="30dp"
                 android:background="@android:color/transparent"
-                android:drawablePadding="12dp"
-                android:padding="8dp"
-                android:hint="Username"
-                android:textColorHint="#ffffff"
-                android:maxLines="1"
                 android:drawableLeft="@drawable/ic_person_white_24dp"
-                android:layout_marginTop="70dp"
-                />
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#ffffff" />
 
 
             <View
@@ -92,7 +89,7 @@
             <Button
                 android:id="@+id/btn_login_connexion"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:background="@drawable/background_login"
                 android:text="Log in"
                 android:textAllCaps="false"
@@ -100,13 +97,13 @@
                 style="@style/Base.TextAppearance.AppCompat.Body1"
                 android:textSize="18sp"
                 android:textColor="#f16f7d"
-                android:padding="16dp"
+                android:padding="1dp"
                 android:clickable="true"
-                android:layout_marginTop="24dp" />
+                android:layout_marginTop="30dp" />
             <Button
                 android:id="@+id/btn_creer_compte_connexion"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:background="@drawable/background_signup"
                 android:text="Sign Up"
                 android:textColor="#fff"
@@ -114,9 +111,9 @@
                 android:textStyle="normal"
                 style="@style/Base.TextAppearance.AppCompat.Body1"
                 android:textSize="18sp"
-                android:padding="16dp"
+                android:padding="1dp"
                 android:clickable="true"
-                android:layout_marginTop="16dp"/>
+                android:layout_marginTop="30dp"/>
 
             <TextView
                 android:layout_width="wrap_content"

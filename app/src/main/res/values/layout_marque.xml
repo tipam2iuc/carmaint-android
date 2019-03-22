@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="layout_marque">
+        <item>Grille</item>
+        <item>List</item>
+    </string-array>
+</resources>

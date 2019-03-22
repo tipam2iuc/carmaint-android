@@ -4,16 +4,16 @@
         android:id="@+id/id_bot_nav_home"
         android:icon="@drawable/home"
         android:title="Home"
-        android:iconTint="@color/vert_bg"/>
+        android:iconTint="@color/violet"/>
     <item
         android:id="@+id/id_bot_nav_stat"
         android:icon="@drawable/courbe"
         android:title="Stat"
-        android:iconTint="@color/vert_bg"/>
+        android:iconTint="@color/violet"/>
     <item
         android:id="@+id/id_bot_nav_notification"
         android:icon="@drawable/notification"
         android:title="Notification"
-        android:iconTint="@color/vert_bg"/>
+        android:iconTint="@color/violet"/>
 
 </menu>

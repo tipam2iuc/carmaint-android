@@ -20,9 +20,12 @@ import com.fulthonn.navigation_menu.Voitures.VoitureEnPanneActivity;
 
 public class HomeFragment extends Fragment {
     LinearLayout voitureDisponible;
+    LinearLayout voitureTotal;
     LinearLayout voitureEnPanne;
     LinearLayout voitureAccident;
+    TextView nombreVoitureDisponible;
     TextView nombreTotalVoiture;
+
 
 
     FrameLayout frameLayout;
@@ -33,12 +36,22 @@ public class HomeFragment extends Fragment {
         final View v = inflater.inflate(R.layout.fragment_home, container, false);
 
 
-        voitureDisponible=v.findViewById(R.id.id_total_voiture);
+        voitureDisponible=v.findViewById(R.id.id_voiture_diponible);
         voitureEnPanne= v.findViewById(R.id.voiture_EnPanne);
         voitureAccident=v.findViewById(R.id.voiture_Accident);
-        nombreTotalVoiture=v.findViewById(R.id.id_nombreTotalVoiture);
+        nombreVoitureDisponible=v.findViewById(R.id.id_nombreVoiture_disponible);
+        nombreTotalVoiture=v.findViewById(R.id.id_nombre_total_voiture);
+        voitureTotal =v.findViewById(R.id.id_total_voiture);
 
-        nombreTotalVoiture.setText(String.valueOf(LocalBd.getNombreTotalVoiture()));
+        voitureTotal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentCategorie = new Intent(getContext().getApplicationContext(),CategoryActivity.class);
+                startActivity(intentCategorie);
+            }
+        });
+
+        nombreVoitureDisponible.setText(String.valueOf(LocalBd.getNombreTotalVoiture()));
 
         voitureDisponible.setOnClickListener(new View.OnClickListener() {
             @Override

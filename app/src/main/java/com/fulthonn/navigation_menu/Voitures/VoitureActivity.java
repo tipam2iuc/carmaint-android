@@ -27,7 +27,7 @@ public class VoitureActivity extends AppCompatActivity  {
     VoitureAdapter adapter;
 
     ArrayList<Voiture> myVoitures;
-    ArrayList<Voiture>getMyVoituresEnPanne;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

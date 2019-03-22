@@ -11,8 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailVoitureActivity"></activity>
-        <activity android:name=".Voitures.VoitureActivity"></activity>
+        <activity android:name=".CategoryActivity"></activity>
+        <activity android:name=".ModelActivity" />
+        <activity android:name=".DetailVoitureActivity" />
+        <activity android:name=".Voitures.VoitureActivity" />
         <activity
             android:name=".InscriptionActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
@@ -28,7 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
         <activity
             android:name=".LancementActivity"
             android:theme="@style/AppTheme.NoActionBar" />
